@@ -29,7 +29,8 @@ const get = async (model, req, conditions = {}, multiple = true) => {
   delete query.populate;
   delete query.order;
   delete query.orderBy;
-  delete query.hours;
+  delete query.start;
+  delete query.end;
 
   if (!_.isEmpty(query)) {
     Object.keys(query).forEach(field => {
