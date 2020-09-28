@@ -4,7 +4,7 @@ const moment = require('moment');
 
 module.exports = {
   async fetchPatientRequests(req, res) {
-    const { start, end, symptoms } = req.body;
+    const { start, end, symptoms } = req.query;
     try {
       let requests = await Request.find({ symptoms });
       requests = requests.filter(request => {
