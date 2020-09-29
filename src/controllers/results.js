@@ -24,17 +24,6 @@ module.exports = {
           });
         }
       }
-
-      // requests = requests.filter(request => {
-      //   return (
-      //     moment(request.created)
-      //       .startOf('day')
-      //       .isSameOrBefore(moment(end).startOf('day')) &&
-      //     moment(request.created)
-      //       .startOf('day')
-      //       .isSameOrAfter(moment(start).startOf('day'))
-      //   );
-      // });
       return success(res, 200, requests);
     } catch (err) {
       return error(res, 500, err.message);
