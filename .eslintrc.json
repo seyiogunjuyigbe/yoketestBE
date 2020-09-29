@@ -32,6 +32,7 @@
     "import/order": "off",
     "func-names": "off",
     "no-return-assign": "off",
+    "no-self-assign": "off",
     "prettier/prettier": [
       "error",
       {
