@@ -6,6 +6,7 @@ const moment = require('moment');
 module.exports = {
   async fetchPatientRequests(req, res) {
     const { start, end } = req.query;
+    console.log(req.query)
     try {
       const requests = await QueryService.find(Request, req);
       if (requests.data.length > 0) {
